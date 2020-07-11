@@ -13,6 +13,7 @@
   setBodyFontSize();
 
   // set 1rem = viewWidth / 10
+  //初始为10等份，自行修改为24等份
   function setRemUnit() {
     var rem = docEl.clientWidth / 24;
     docEl.style.fontSize = rem + "px";
