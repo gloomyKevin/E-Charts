@@ -1,0 +1,51 @@
+/* css初始化 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../images/bg.jpg)
+    top center;
+    line-height: 1.15;
+}
+
+header {
+    position: relative;
+    height: 1.25rem;
+    background: url(../images/head_bg.png)
+    no-repeat;
+    background-size: 100% 100%;
+    h1 {
+        font-size: .475rem;
+        color: white;
+        text-align: center;
+        line-height: 1rem;
+    }
+    .showTime {
+        position: absolute;
+        right: .375rem;
+        top: 0;
+        line-height: .9375rem;
+        color: white;
+        font-size: .25rem;
+        
+    }
+}
+
+.mainbox {
+    display: flex;
+    min-width: 1024;
+    max-width: 1920;
+    height: 300px;
+    padding: .125rem .125rem 0;
+    background-color: pink;
+    .column {
+        flex: 3;
+    }
+
+    &::nth-child(2) {
+        flex: 5;
+    }
+}

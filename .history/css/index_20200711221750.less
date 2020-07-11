@@ -82,7 +82,7 @@ header {
             left: 0;
             bottom: 0;
             width: 100%;
-            &::before {
+            .panel-footer::before {
                 position: absolute;
                 bottom: 0;
                 left: 0;
@@ -90,7 +90,7 @@ header {
                 width: .125rem;
                 height: .125rem;
                 border-left: 2px solid #02a6b5;
-                border-bottom: 2px solid #02a6b5;
+                border-top: 2px solid #02a6b5;
             }
             &::after {
                 position: absolute;
@@ -100,22 +100,8 @@ header {
                 width: .125rem;
                 height: .125rem;
                 border-right: 2px solid #02a6b5;
-                border-bottom: 2px solid #02a6b5;
+                border-top: 2px solid #02a6b5;
             }
-        }
-
-        h2 {
-            height: .6rem;
-            color: #fff;
-            line-height: .6rem;
-            text-align: center;
-            font-size: .5rem;
-            font-weight: 400;
-        }
-
-        .chart {
-            height: 3rem;
-            background-color: #fff;
         }
     }
 
